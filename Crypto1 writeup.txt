@@ -1,0 +1,56 @@
+Write-up For crytpo 1
+
+
+crypto_1A
+
+The ciphertext was all lowercase ascii and the first challenge, so this likely used a basic shift cipher.
+
+I used an online ROT13 Decoder to see if it was the simpliest basic shift cipher.
+
+Next I wrote a python program (caeser_cipherbruter.py) to run through all of the keys in the caesar cipher
+
+Upon manual inspection only one of the results was in intelligible english and looked like the key.
+
+kudos to julius caesar for developing this scheme
+
+
+crypto_1b
+
+Composed entirely of ascii letters. The formatting was weird 6 groups of 8 letters
+
+Tried to see if was the ceasar cipher by brute forcing all the keys. 
+
+Since every cipher word is 8 characters maybe it is a vigenere cipher with key length 8
+
+Thought it might be the vigenere cipher so I tried sorting the crypto-text into 8 bins using a python program (binseperator.py) 
+and then using a monoalphabet cipher solver seperately on each bin then pasting everything back together. 
+Tried using a various number of bins 1-4 and 8. 
+
+Tried running the entire message through the monoalphetic solver online.
+
+Tried looking at the bins I made and reading them down and diagonlly. To see if it was some sort of split cipher.
+
+Researched clasiccal ciphers. Seemed to be a rail fence cipher do to the groups of letters
+
+Tried an online rail fence cipher solver.
+
+answer
+maybe just rearranging letters is not so strong after all
+
+
+crypto_1c
+
+Thought it might be the vigenere cipher so I tried sorting the crypto-text into 8 bins using a python program (binseperator.py) 
+and then using a monoalphabet cipher solver seperately on each bin then pasting everything back together. 
+Tried using a various number of bins 1-7. The message was too long fror the Frequency analyzer to work.
+
+After research used frequency analysis to determine what type of cipher 1c likely was. Found that it was most likely a subsitution cipher. 
+After more research found a brute force attack on vigenere. 
+
+Used an online cracker to find the key was
+Rickroll
+and the message was
+weve known each other for so long your hearts been aching but youre too shy to say it inside we both know whats been going on we know the game and were gonna play it
+
+
+

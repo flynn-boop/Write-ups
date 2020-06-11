@@ -1,0 +1,7 @@
+Crypto 2
+
+I opened the cipher algorithem and quickly found that it was doing xor.
+From previous research I found that you could likely bruteforce the key.
+I used an online cracker https://wiremask.eu/tools/xor-cracker/ to get the message.
+
+Now, this is a story all about how my bits got flipped-xor'd upside down. So I'd like to take a minute, just sit right there, and I'll tell you how I became the flag to a CCT quals chal.

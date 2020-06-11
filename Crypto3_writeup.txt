@@ -1,0 +1,6 @@
+Crypto 3 
+
+Based off of the format of the crypto3.pub I beleived this to be an RSA key and cipher3 to be the cryptotext.
+
+I researched RSA attacks online and found a tool that could do a variety of attacks (hastads attack ,factordb ,mersenne_primes,noveltyprimes,smallq,wiener,primefactorization ,fermat factorization, Pollard_p_1, londahl).
+Was not able to solve the challenge.
